@@ -1,0 +1,32 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?joaoantoniosantos.com.br [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+ErrorDocument 404 /404.html
+
+Options -Indexes
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+DirectoryIndex index.html 404.html
+
+AddType application/octet-stream .pdf
+AddType application/octet-stream .avi
+AddType application/octet-stream .xls
+AddType application/octet-stream .csv
+AddType application/octet-stream .txt
+
+<FilesMatch ".(htm|html|css|js)$">
+AddDefaultCharset UTF-8
+</FilesMatch>

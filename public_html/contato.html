@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato - Joao Antonio Santos</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/signin.css">
+        <link rel="stylesheet" href="css/responsive-nav.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/narrow-jumbotron.css">
+        
+        <script src="js/responsive-nav.js"></script>
+    </head>
+    <body>
+        <nav class="nav-collapse">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="http://youtube.com/joaoantoniosantosbr">Youtube</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <script>
+          var navigation = responsiveNav(".nav-collapse", {
+            animate: true,                    // Boolean: Use CSS3 transitions, true or false
+            transition: 284,                  // Integer: Speed of the transition, in milliseconds
+            label: "Menu",                    // String: Label for the navigation toggle
+            insert: "after",                  // String: Insert the toggle before or after the navigation
+            customToggle: "",                 // Selector: Specify the ID of a custom toggle
+            closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+            openPos: "relative",              // String: Position of the opened nav, relative or static
+            navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+            navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+            jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+            init: function(){},               // Function: Init callback
+            open: function(){},               // Function: Open callback
+            close: function(){}               // Function: Close callback
+          });
+        </script>
+        <!-- Contato -->
+        <div class="jumbotron">
+            <h1 class="display-3">Instagram</h1>
+            <p><a class="btn btn-lg btn-success" href="http://instagram.com/jsantos737" role="button">instagram.com/jsantos737</a></p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-3">Facebook - Pagina</h1>
+            <p><a class="btn btn-lg btn-success" href="http://facebook.com/jsantos737page" role="button">facebook.com/jsantos737page</a></p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-3">Youtube</h1>
+            <p><a class="btn btn-lg btn-success" href="http://youtube.com/joaoantoniosantosbr" role="button">youtube.com/joaoantoniosantosbr</a></p>
+        </div>
+        <!-- /Contato -->
+        <div class="jumbotron">
+            <h1 class="display-3">Facebook - Perfil</h1>
+            <p><a class="btn btn-lg btn-success" href="http://facebook.com/jsantos737" role="button">facebook.com/jsantos737</a></p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-3">Twitter</h1>
+            <p><a class="btn btn-lg btn-success" href="http://twitter.com/jsantos737" role="button">twitter.com/jsantos737</a></p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-3">GitHub</h1>
+            <p><a class="btn btn-lg btn-success" href="http://github.com/jsantos737" role="button">gitgub.com/jsantos737</a></p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-3">Azubu.Tv</h1>
+            <p><a class="btn btn-lg btn-success" href="http://azubu.tv/jsantos737" role="button">azubu.tv/jsantos737</a></p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-3">Email</h1>
+            <p class="lead">joao@joaoantoniosantos.com.br</p>
+            ou
+            <form method="POST" action="email.php" class="form-signin">
+                <fieldset style="border: 1px solid black;">
+                    <h2 class="form-signin-heading">Fale comigo</h2>
+                    
+                    <label for="nome" class="sr-only">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required>
+                    
+                    <label for="email" class="sr-only">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                    
+                    <label for="assunto" class="sr-only">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" class="form-control" placeholder="Assunto" required>
+                    
+                    <label for="mensagem" class="sr-only">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="20" class="form-control" placeholder="Mensagem"></textarea  >
+                    
+                    <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Enviar</a></p>-->
+                    <input type="submit" value="enviar" class="btn btn-lg btn-success" name="enviar" />
+                </fieldset>
+                <script type="text/javascript">
+                                google_ad_client = "ca-pub-7530652275273987";
+                                google_ad_slot = "3283257957";
+                                google_ad_width = auto;
+                                google_ad_height = 90;
+                            </script>
+                            <!-- SiteJoao2017-2 -->
+                            <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+                            </script>
+            </form>
+        </div>
+        
+        
+        <!--<div class="jumbotron">
+            <h1 class="display-3">Facebook</h1>
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href="#" role="button">Inscrever-Se</a></p>
+        </div>
+        -->
+    </body>
+    
+</html>

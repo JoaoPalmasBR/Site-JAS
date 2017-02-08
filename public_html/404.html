@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Desculpe</title>
+        <style>
+            #horizon,body,html{
+                height:100%;
+                width:100%;
+            }
+            #horizon,#sun{
+                position:static;
+            }
+            #sun,a,h1,p{
+                margin:0 auto;
+            }
+            body,html{
+                margin:0;
+                padding:0;
+                background-color:#34454D;
+                overflow:hidden;
+            }
+            body{
+                background:url('images/forest.png') center bottom repeat-x;
+                text-align:center;
+                font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+                color:#fff;
+            }
+            #horizon{
+                display:table;
+            }
+            #sun{
+                display:table-cell;
+                vertical-align:middle;
+                background-color:rgba(0,0,0,.42);
+            }
+            a,h1,p{
+                text-shadow:1px 1px 4px rgba(23,35,34,.75);
+                max-width:80%;
+            }
+            h1,p{
+                display:block;
+            }
+            h1{
+                font-size:48px;
+                margin-bottom:5px;
+            }
+            p{
+                font-size:24px;
+                max-width:475px;
+            }
+            a{
+                color:#4bf;
+                text-decoration:none;
+            }
+            a[role=button]{
+                margin-top:15px;
+                display:inline-block;
+                color:#fff;
+                font-weight:700;
+                padding:10px 20px;
+                border-radius:5px;
+                background:#4bf;
+                text-shadow:none;
+                font-size:16px;
+            }
+            a[role=button]:active{
+                background:#3795cc;
+            }
+            .smaller p{
+                font-size:18px;
+            }
+            .smaller h1{
+                font-size:42px;
+            }
+            
+            @media (max-width:499px){
+                p{
+                    font-size:16px;
+                    line-height:1.4;
+                    max-width:290px;
+                }
+                a[role=button]{
+                    font-size:16px;
+                    padding:7px 15px;
+                }
+                .smaller p{
+                    font-size:15px;
+                }
+                .smaller a[role=button]{
+                    font-size:14px;
+                }
+                .smaller h1{
+                    font-size:36px;
+                }
+            }
+            @media (max-width:300px){
+                h1{
+                    font-size:36px;
+                }
+                p{
+                    font-size:14px;
+                    line-height:1.4;
+                    max-width:250px;
+                }
+                a[role=button]{
+                    margin-top:10px;
+                    font-size:14px;
+                }
+                .smaller a[role=button],.smaller p{
+                    font-size:12px;
+                }
+                .smaller h1{
+                    font-size:28px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="horizon">
+            <div id="sun">
+                <h1>Desculpe.</h1>
+                <p>Erro 404, A pagina nao pode ser encontrada.</p>
+            </div>
+        </div>
+    </body>
+</html>
